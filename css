@@ -1,0 +1,184 @@
+/* ======================================================
+   🌍 1) CSS GLOBAL (usado por todas as telas)
+   ====================================================== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo geral */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #404040;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background_devflow.png");
+  background-size: cover;
+  background-position: 50%;
+}
+
+body {
+  background-image: url("img/background02.jpg");
+  background-size: cover;      /* faz a imagem preencher a tela inteira */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat;/* evita repetição da imagem */
+}
+
+
+
+
+/* ======================================================
+   🟦 2) TELA DE EDITAR PERFIL
+   Elementos que aparecem SOMENTE nessa tela
+   ====================================================== */
+
+/* Card branco principal */
+.container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.678);
+}
+
+/* Header com logo + título */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Título do container */
+.container h1 {
+  font-size: 26px;
+  color: #0a2b46;
+  white-space: nowrap;
+}
+
+/* Grupo de inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Inputs e textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.678);
+}
+
+textarea {
+  resize: none;
+}
+
+/* Preview da foto */
+.preview {
+  display: block;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Botões do perfil */
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Botão salvar */
+.botao-salvar {
+  background-image: linear-gradient(#0a2b46, #3354c1);
+  color: white;
+}
+
+/* Botão limpar */
+.botao-limpar {
+  background-image: linear-gradient(#b12020, #ff4c4c);
+  color: white;
+}
+
+/* Mensagem abaixo dos botões */
+.mensagem {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/* ======================================================
+   🟪 3) TELA DE LOGIN / CADASTRO
+   Elementos exclusivos dessas telas
+   ====================================================== */
+
+/* Card principal (login/cadastro) */
+form {
+  background-color: rgb(248, 248, 248);
+  padding: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 380px;
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.678);
+}
+
+/* Inputs da tela de login/cadastro */
+form input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+/* Botão da tela de login/cadastro */
+form button {
+  padding: 10px;
+  align-self: center;
+  width: 160px;
+  border-radius: 30px;
+  background-image: linear-gradient(#0a2b46, #3354c1);
+  border: solid 1px #012231;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  font-size: 16px;
+  color: rgb(216, 211, 211);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  color: rgb(0, 174, 255);
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
