@@ -17,27 +17,22 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("background_devflow.png");
-  background-size: cover;
-  background-position: 50%;
-}
 
-body {
+  /* 🔵 Fundo geral (imagem na pasta /img/) */
   background-image: url("img/background02.jpg");
-  background-size: cover;      /* faz a imagem preencher a tela inteira */
-  background-position: center; /* centraliza a imagem */
-  background-repeat: no-repeat;/* evita repetição da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 
 
 
 /* ======================================================
    🟦 2) TELA DE EDITAR PERFIL
-   Elementos que aparecem SOMENTE nessa tela
+   Elementos exclusivos dessa tela
    ====================================================== */
 
-/* Card branco principal */
+/* Container branco principal */
 .container {
   background-color: white;
   padding: 50px;
@@ -49,7 +44,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 102, 255, 0.678);
 }
 
-/* Header com logo + título */
+/* Header com logo e título */
 .header {
   display: flex;
   align-items: center;
@@ -57,7 +52,7 @@ body {
   gap: 12px;
 }
 
-/* Logo */
+/* Logo padrão (editar perfil) */
 .logo {
   width: 150px;
   height: auto;
@@ -78,7 +73,7 @@ body {
   gap: 8px;
 }
 
-/* Inputs e textarea */
+/* Inputs */
 input,
 textarea {
   width: 100%;
@@ -93,7 +88,7 @@ textarea {
   resize: none;
 }
 
-/* Preview da foto */
+/* Foto de perfil (preview) */
 .preview {
   display: block;
   margin-top: 10px;
@@ -103,26 +98,23 @@ textarea {
   object-fit: cover;
 }
 
-/* Botões do perfil */
+/* Botões */
 .botoes {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* Botão salvar */
 .botao-salvar {
   background-image: linear-gradient(#0a2b46, #3354c1);
   color: white;
 }
 
-/* Botão limpar */
 .botao-limpar {
   background-image: linear-gradient(#b12020, #ff4c4c);
   color: white;
 }
 
-/* Mensagem abaixo dos botões */
 .mensagem {
   text-align: center;
   font-weight: bold;
@@ -131,11 +123,11 @@ textarea {
 
 
 /* ======================================================
-   🟪 3) TELA DE LOGIN / CADASTRO
+   🟪 3) TELA DE LOGIN E CADASTRO
    Elementos exclusivos dessas telas
    ====================================================== */
 
-/* Card principal (login/cadastro) */
+/* Card principal */
 form {
   background-color: rgb(248, 248, 248);
   padding: 50px;
@@ -147,7 +139,7 @@ form {
   box-shadow: 0 0 15px rgba(0, 102, 255, 0.678);
 }
 
-/* Inputs da tela de login/cadastro */
+/* Inputs do login/cadastro */
 form input {
   padding: 10px 20px;
   border-radius: 10px;
@@ -156,7 +148,7 @@ form input {
   width: 100%;
 }
 
-/* Botão da tela de login/cadastro */
+/* Botão do login/cadastro */
 form button {
   padding: 10px;
   align-self: center;
